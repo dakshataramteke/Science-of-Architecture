@@ -1,0 +1,20 @@
+@media(max-width:991px){
+    .home_wrapper .img2{
+        top: 130px;
+    right: 70px;
+    height: 250px;
+    width: 200px;
+    }
+}
+
+
+@media(max-width:450px){
+    .navbar .nav_img1{
+       height: 1rem;
+       width: 0.9325rem;
+    }
+    .navbar .nav_img{
+        height: 1rem;
+        width: 0.25rem;
+    }
+}
