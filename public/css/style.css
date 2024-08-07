@@ -1,7 +1,8 @@
-@import url('./responsive.css');
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: rgb(214, 197, 229);
@@ -11,6 +12,8 @@ body{
 :root{
     --black: black;
     --red: red;
+    --white:white;
+    --brown: brown;
 }
 /* Navbar  */
 .top-title{
@@ -48,7 +51,6 @@ nav{
 /* Background  */
 .home{
     z-index: -1;
-    width: 100vw;
 }
 .home_wrapper .background_img{
     min-height: 250px;
@@ -76,19 +78,101 @@ nav{
 }
 .home_wrapper .img2{
     position: absolute;
-    top: 140px;
+    top: 130px;
     right: 70px;
     height: 500px;
     width: 280px;
 }
 /* Marquee  */
+.marquee{
+    background-color: rgb(11, 37, 114);
+}
 .marquee img{
     height: 10rem;
     width: 12rem;
 }
+/* Section 3 */
+.yantra_wrapper .yantra_img{
+    min-height: 150px;
+    min-width: 200px;
+}
+.yantra_wrapper h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.yantra_wrapper p{
+    font-size: 1.5rem;
+}
+/* Products  */
+.products_wrapper h2{
+font-size: 3rem;
+font-weight: 400;
+}
+.products_wrapper .card{
+    border: none;
+}
+.products_wrapper .btn_dark{
+    background-color: var(--brown);
+    width: 100%;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: none;
+}
+.products_wrapper .btn_dark:hover{
+    background-color: var(--brown);
+    color:var(--white);
+}
+/* Delivery Mode  */
+.order_history{
+    background-color: rgb(214, 209, 209);
+    padding: 3rem 2rem 0.5rem;
+    margin-bottom: 8rem;
+}
+.order_icon i{
+    font-size: 2.6rem;
+    margin: 0.75rem;
+}
+/* New Arrivals  */
+.new_arrivals{
+    background-color: var(--red);
+    height: 20rem;
+}
+.new_arrivals h2{
+    color: var(--white);
+}
+.new_arrivals .card{
+    margin: 0.75rem 3rem 0.75rem ;
+    border-radius: 0.75rem;
+    /* border: none; */
+}
+.new_arrivals .card_img{
+    padding: 2.5rem 3.5rem 0;
+   
+}
+.new_arrivals .new_arrival_img{
+    border-radius: 100%;
+    padding: 0.50rem;
+    outline:3px dotted var(--red);
+}
+.new_arrivals .card_date{
+    color: var(--red);
+}
+.new_arrivals .card_date i{
+    padding-right: 0.25rem;
+    font-weight: bold;
+}
+/* Testimonials  */
+.testimonials{
+    margin: 20rem 0 1rem 4rem;
+}
+.one{
+    border: 1px solid black;
+}
+
 
 /* Responsive  */
-@media(max-width:1124px){
+@media(max-width:1224px){
     /* Navbar  */
     .navbar .nav-item{
         padding: 0 0.75rem;
@@ -98,6 +182,7 @@ nav{
         width: 2.95rem;
     }
     /* Background  */
+    
     .home_wrapper .background_text h2{
         font-size: 4rem;
     }
@@ -111,10 +196,10 @@ nav{
 
 @media(max-width:991px){
     .home_wrapper .background_text h2{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .home_wrapper .img2{
-        top: 130px;
+        top: 100px;
         right: 70px;
         height: 300px;
         width: 180px;
@@ -122,14 +207,25 @@ nav{
     .home_wrapper .background_text p{
         font-size: 1.2rem;
     }
+    .yantra_wrapper h2{
+        font-size: 3rem;
+    }
+    .yantra_wrapper p{
+        font-size: 1.2rem;
+    }
+
 }
 @media(max-width:767px){
+    .home_wrapper .background_img{
+        min-height: 280px ;
+        position: relative;
+    }
     .home_wrapper .background_text{
         top:180px;
         left: 30px;
     }
     .home_wrapper .background_text h2{
-        font-size: 2.75rem;
+        font-size: 2.25rem;
     }
     .home_wrapper .img2{
         top: 130px;
@@ -140,6 +236,26 @@ nav{
     .home_wrapper .background_text p{
         font-size: 1rem;
     }
+    /* .marquee  */
+    .marquee img{
+        height: 7.5rem;
+        width: 9.5rem;
+    }
+    .yantra_wrapper .yantra_img{
+        min-height: 150px;
+        min-width: 200px;
+    }
+    .yantra_wrapper h2{
+        font-size: 2.25rem;
+    }
+    .yantra_wrapper p{
+        font-size: 1rem;
+    }
+    /* Product  */
+    .products_wrapper h2{
+        font-size: 2.25rem;
+        font-weight: 400;
+        }
 }
 
 @media(max-width:580px){
@@ -164,6 +280,17 @@ nav{
         height: 7rem;
         width: 9rem;
     }
+    .yantra_wrapper h2{
+        font-size: 1.825rem;
+    }
+    .yantra_wrapper p{
+        font-size: 0.75rem;
+    }
+    /* Products  */
+    .products_wrapper h2{
+        font-size: 1.825rem;
+        font-weight: 400;
+        }
 }
 
 
@@ -177,7 +304,7 @@ nav{
         width: 10rem;
     }
     .home_wrapper .background_img{
-        min-height:200px;
+        min-height:250px;
     }
     .home_wrapper .background_text{
         top:140px;
@@ -200,8 +327,9 @@ nav{
     }
     /* Marquee  */
     .marquee img{
-        height: 4.75rem;
-        width: 6.75rem;
+        height: 5rem;
+        width: 4.5rem;
+        padding: 0;
     }
 }
 
