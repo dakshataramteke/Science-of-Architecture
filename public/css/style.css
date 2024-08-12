@@ -113,6 +113,7 @@ font-weight: 400;
 }
 .products_wrapper .card{
     border: none;
+     margin:.50rem;
 }
 .products_wrapper .btn_dark{
     background-color: var(--brown);
@@ -140,6 +141,9 @@ font-weight: 400;
 .new_arrivals{
     background-color: var(--red);
     height: 20rem;
+}
+.new_arrivals .col-6{
+    margin:0.5rem;
 }
 .new_arrivals h2{
     color: var(--white);
@@ -199,6 +203,7 @@ font-weight: 400;
     background-color: var(--yellow);
     border: none;
     font-weight: 400;
+    margin:.50rem;
    
  }
  .blog_wrapper .card .blog_image1{
@@ -276,3 +281,13 @@ font-weight: 400;
 }
 
 
+/* Responsivness  */
+@media(max-width:767px){
+    .new_arrivals{
+    height: 50rem;
+}
+   footer{
+    margin-top: 90rem;
+   
+ } 
+}
