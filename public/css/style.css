@@ -54,7 +54,7 @@ nav{
     z-index: -1;
 }
 .home_wrapper .background_img{
-    min-height: 300px;
+    min-height: 400px;
     position: relative;
 }
 .home_wrapper .background_text{
@@ -282,7 +282,53 @@ font-weight: 400;
 
 
 /* Responsivness  */
+@media(max-width:1040px){
+      .home_wrapper .background_text{
+  
+    position: absolute;
+    top:180px;
+    left: 30px;
+    border: 2px solid black;
+}
+    .home_wrapper .background_text h2{
+    font-weight: 400;
+    font-size: 3.725rem;
+}
+.home_wrapper .background_text p{
+    font-size: 1.5rem;
+}
+.home_wrapper .img2{
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    height: 350px;
+    width: 250px;
+    border: 2px solid black;
+}
+}
 @media(max-width:767px){
+    /* Home Wrapper  */
+    .home_wrapper .background_text{
+    position: absolute;
+    top:180px;
+    left: 30px;
+    border: 2px solid black;
+}
+    .home_wrapper .background_text h2{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.home_wrapper .background_text p{
+    font-size: 1.125rem;
+}
+.home_wrapper .img2{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+}
     .new_arrivals{
     height: 50rem;
 }
@@ -290,4 +336,28 @@ font-weight: 400;
     margin-top: 90rem;
    
  } 
+}
+@media(max-width:767px){
+    /* Home Wrapper  */
+    .home_wrapper .background_text{
+    position: absolute;
+    top:180px;
+    left: 10px;
+    border: 2px solid black;
+}
+    .home_wrapper .background_text h2{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.home_wrapper .background_text p{
+    font-size: 0.75rem;
+}
+.home_wrapper .img2{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    height: 250px;
+    width: 140px;
+    border: 2px solid black;
+}
 }
